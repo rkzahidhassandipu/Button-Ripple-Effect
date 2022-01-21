@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgb(19, 1, 68);
+    flex-direction: column;
+}
+button{
+    position: relative;
+    display: inline-block;
+    padding: 12px 36px;
+    margin: 10px 0;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    overflow: hidden;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #f508e9, #00eeff);
+    z-index: 10;
+}
+button:nth-child(2){
+    background: linear-gradient(90deg, #fdc408, #fc55b6);
+}
+span{
+    position: absolute;
+    background: #fff;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: animated 1s linear infinite;
+}
+@keyframes animated{
+    0%{
+        width: 0;
+        height: 0;
+        opacity: 0.5;
+    }
+    100%{
+        width: 500px;
+        height: 500px;
+        opacity: 0;
+    }
+}
